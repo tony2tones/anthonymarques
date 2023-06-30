@@ -1,0 +1,92 @@
+/* $border-color: yellow; */
+
+.test {
+    opacity: 0.5;
+}
+
+.landing__container__content__border__animation:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+
+.landing__container__content__border__animation:before{
+    animation: animate 2s linear forwards;
+
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #fff;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+    
+.landing__container__content__border__animation:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+
+.landing__container__content__border__animation:after{
+    animation: animate2 2s linear forwards;
+
+}
+
+@keyframes animate2 {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+    }
+    50% {
+        width: 0%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+}

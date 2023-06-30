@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anthonymarques';
+  public hideBtn = true;
+  @Output() buttonPressed = new EventEmitter();
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  mainNav() {
+    this.buttonPressed.emit(true);
+  }
+
+
+
 }
+
