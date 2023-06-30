@@ -10,19 +10,10 @@ export class LandingPageComponent {
   public hideBtn = true;
   @Output() buttonPressed = new EventEmitter();
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  mainNav() {
+  mainNav():void {
     this.buttonPressed.emit(true);
   }
 
-
-
-}
-function output() {
-  throw new Error('Function not implemented.');
 }
 
 
