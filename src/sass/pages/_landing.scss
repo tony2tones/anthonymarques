@@ -2,6 +2,7 @@
     from {
         background-position: 0 0;
     }
+
     /*use negative width if you want it to flow right to left else and positive for left to right*/
     to {
         background-position: 0 -10000px;
@@ -18,6 +19,18 @@
     }
 }
 
+.landing__content {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: inherit;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    font-size: 25px;
+}
+
 .landing {
     &__background {
         background-attachment: fixed;
@@ -29,38 +42,34 @@
         overflow: hidden;
     }
 
-    &__container {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 60px;
-        font-size: 25px;
+    // &__container {
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     padding: 60px;
+    //     font-size: 25px;
 
-        &__content {
-            position: absolute;
-            display: contents;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 60px;
-            font-size: 25px;
+    &__content {
+        &__border__animation {
+            
 
-            &__border__animation h1 {
-                font-size: xxx-large;
-                color: #fff;
-                animation: fadeIn linear 3s;
-                -webkit-animation: fadeIn linear 7s;
-                -moz-animation: fadeIn linear 7s;
-                -o-animation: fadeIn linear 7s;
-                -ms-animation: fadeIn linear 7s;
-            }
+         h1 {
+            font-size: xxx-large;
+            color: #fff;
+            animation: fadeIn linear 3s;
+            -webkit-animation: fadeIn linear 7s;
+            -moz-animation: fadeIn linear 7s;
+            -o-animation: fadeIn linear 7s;
+            -ms-animation: fadeIn linear 7s;
+        }
+
         }
     }
 
     &__center__btn {
         position: absolute;
-        top: 200%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
