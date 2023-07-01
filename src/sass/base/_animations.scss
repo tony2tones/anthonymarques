@@ -12,7 +12,6 @@
 
 .landing__content__border__animation:before{
     animation: animate 2s linear forwards;
-
 }
 
 @keyframes animate {
@@ -42,7 +41,6 @@
     }
 }
 
-    
 .landing__content__border__animation:after {
     content: '';
     position: absolute;
