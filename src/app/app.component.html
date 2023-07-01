@@ -1,1 +1,10 @@
-<app-landing-page></app-landing-page>
+<div class="container-g">
+    <div *ngIf="!hideLanding">
+      <section class="landing__background">
+        <app-landing-page (buttonPressed)="uiUpdate($event)"></app-landing-page>
+      </section>
+    </div>
+    <div *ngIf="hideLanding">
+      <router-outlet></router-outlet>
+    </div>
+  </div>

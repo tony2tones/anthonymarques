@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html {
+    // defines what 1rem is 
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+body {
+    margin:0;
+    background-color: #24272e;
+}
+*{
+    margin:0;
+}
+
+// SCROLLBAR STYLES
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-blue) var(--custom-white);
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #fff ;
+    border-radius: 3.5rem;
+    border: 3px solid var(--custom-white);
+}
+
