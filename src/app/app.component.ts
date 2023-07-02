@@ -17,7 +17,7 @@ export class AppComponent {
 
   uiUpdate($event:boolean) {
     this.hideLanding = $event;
-    this.router.navigateByUrl('/profile');
+    this.router.navigateByUrl('/main');
   }
 }
 
