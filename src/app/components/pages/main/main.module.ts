@@ -1,11 +1,13 @@
-// import { NgModule } from "@angular/core";
-// import { RouterModule } from "@angular/router";
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
-// const routes = [{}];
+const routes = [{}];
 
-// @NgModule({
-//     declarations: [],
-//     imports: [
-//         RouterModule.forRoot(routes),
-//       ],
-//     })
+@NgModule({
+    declarations: [],
+    imports: [
+        RouterModule.forRoot(routes),
+      ],
+    })
+    
+export class MainModule { }
