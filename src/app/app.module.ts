@@ -7,6 +7,7 @@ import { MainComponent } from './components/pages/main/main.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavHeaderComponent } from './components/navigation/navigation.component';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
+import { SvgTailwindcssComponent } from './components/svg/svg-tailwindcss/svg-tailwindcss.component';
 
 const routes: Routes = [{  path: 'home', component: LandingPageComponent },
 { path: '', redirectTo: '/home' , pathMatch:'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [{  path: 'home', component: LandingPageComponent },
     LandingPageComponent,
     MainComponent,
     TechStackComponent,
+    SvgTailwindcssComponent,
   ],
   imports: [
     BrowserModule,
