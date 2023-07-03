@@ -6,6 +6,7 @@ import { LandingPageComponent } from './components/pages/landing-page/landing-pa
 import { MainComponent } from './components/pages/main/main.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavHeaderComponent } from './components/navigation/navigation.component';
+import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 
 const routes: Routes = [{  path: 'home', component: LandingPageComponent },
 { path: '', redirectTo: '/home' , pathMatch:'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [{  path: 'home', component: LandingPageComponent },
     AppComponent, 
     LandingPageComponent,
     MainComponent,
+    TechStackComponent,
   ],
   imports: [
     BrowserModule,
