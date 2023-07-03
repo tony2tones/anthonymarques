@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-export class NavigationComponent {
+export class NavHeaderComponent {
   @Output() messageBus = new EventEmitter<string>();
   constructor(private router: Router) { }
 
