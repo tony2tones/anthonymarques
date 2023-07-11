@@ -1,0 +1,13 @@
+
+.project-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    grid-gap: 1em;
+    
+  }
+
+  .project img {
+    max-height: 280px;
+    max-width: 400px;
+  }
