@@ -1,4 +1,16 @@
 
+@media (max-width: 400px){
+  .navBar {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    color: #fff;
+    font-size: xx-large;
+  }
+
+}
+
 .navBar {
     position: fixed;
     top: 0;
