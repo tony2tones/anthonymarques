@@ -1,19 +1,29 @@
-
 .project-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    grid-gap: 2em;
-    padding-top: 15rem;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  grid-gap: 2em;
+  padding-top: 15rem;
+}
 
-  .project img {
-    max-height: 280px;
-    max-width: 400px;
-  }
+.project img {
+  max-height: 280px;
+  max-width: 400px;
+}
 
-  .container {
-    height: 100vh;
-    margin:auto 13%;
-    align-items: center;
-  }
+.container {
+  height: 100vh;
+  margin: auto 13%;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.work-header {
+  text-align: center;
+  margin: auto 20%;
+}
+
+.experience {
+  font-size: medium;
+  padding: 3rem;
+}
