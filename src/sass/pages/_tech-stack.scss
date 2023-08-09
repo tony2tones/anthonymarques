@@ -19,6 +19,12 @@
     }
 }
 
+.techstack-header {
+    text-align: center;
+    color: whitesmoke;
+    margin: auto 20%;
+}
+
 .profile-background {
     background-attachment: fixed;
     height: 100vh;
@@ -67,12 +73,22 @@
 }
 
 
-@media (max-width: 1300px) {
+@media (min-width:320px) {
 
-    // .project-list {
-    .project img {
-        // max-height: 280px;
+
+    .project {
+        margin-right: 0rem;
+        max-height: 170px;
     }
 
-    // }
+    .image-adjustment>img {
+        max-height: 120px;
+        padding-top: 2rem;
+    }
+
+    .project.svg {
+        max-height: 120px;
+        padding-top: 2rem;
+        width: 150px;
+    }
 }

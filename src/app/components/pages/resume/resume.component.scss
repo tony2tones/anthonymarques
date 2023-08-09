@@ -1,20 +1,40 @@
 .container {
     margin: auto 10%;
-    padding:5rem;
+    padding: 5rem;
     color: aliceblue;
     font-size: large;
 }
 
 .title-container {
-    padding:3rem;
+    padding: 3rem;
 }
 
 .experience {
     font-size: medium;
-    padding:3rem;
+    padding: 3rem;
 }
+
 .spacing {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+
+// @media (max-width: 400px){
+//     .experience.mobile {
+//       display: none;
+//     }
+
+//   }
+
+@media(max-width: 644px) {
+    .container {
+        margin-top: 20rem;
+        padding: 0;
+    }
+
+    .experience.mobile {
+        display: none;
+    }
 }

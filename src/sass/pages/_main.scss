@@ -133,4 +133,32 @@
     font-size: 3rem;
     height: inherit;
   }
+
+  
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+
+  /* Your CSS styles for tablet devices */
+  .main__container {
+      font-size: xx-large;
+  }
+  
+}
+
+@media (max-width: 780px) {
+
+  /* Your CSS styles for tablet devices */
+  .main__container {
+      font-size: x-large;
+  }
+}
+
+
+@media(max-width: 644px) {
+
+  /* Your CSS styles for tablet devices */
+  .bio-card {
+    margin: 2rem;
+    margin-top: 5rem;
+  }
+}
   
