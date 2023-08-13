@@ -6,6 +6,8 @@
   padding-top: 15rem;
 }
 
+
+
 .project img {
   max-height: 280px;
   max-width: 400px;
@@ -21,9 +23,40 @@
 .work-header {
   text-align: center;
   margin: auto 20%;
+  font-size: xxx-large;
 }
 
 .experience {
   font-size: medium;
   padding: 3rem;
+}
+
+
+
+@media (max-width:420px) {
+  
+  .work-header {
+    font-size: x-large;
+  }
+  
+  .project.mobile>img {
+    display: block;
+  }
+  
+  .project.desktop>img {
+    display: none;
+  }
+}
+
+@media (min-width:450px) {
+  .work-header {
+    font-size: x-large;
+  }
+  .project.mobile>img {
+    display: none;
+  }
+  
+  .project.desktop>img {
+    display: block;
+  }
 }
