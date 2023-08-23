@@ -18,20 +18,43 @@
         background-position: 0 -10000px;
     }
 }
-@media handheld, screen and (max-width: 400px) {
-.project {
-    max-height: 150px;
+
+.techstack-header {
+    text-align: center;
+    font-size: xxx-large;
+    color: whitesmoke;
+    margin: auto 20%;
 }
+
+@media handheld,
+screen and (max-width: 400px) {
+    .project {
+        max-height: 150px;
+    }
+
+    .techstack-header {
+        font-size: large;
+        margin: auto 10%;
+    }
+
 }
-@media handheld, screen and (max-width: 950px) {
+
+@media handheld,
+screen and (max-width: 950px) {
+    .container-techstack {
+        padding-top: 10rem;
+    }
+
     .desktop-list {
         display: none;
     }
+
     .project-list.mobile {
         display: flex;
     }
+
     /* Mobile-specific styles here */
-    .project > img{
+    .project>img {
         margin-right: 0rem;
         max-height: 190px;
     }
@@ -57,48 +80,45 @@
     .project-list {
         grid-gap: 0rem;
     }
-  }
+}
 
 @media (min-width: 950px) and (max-width: 2400px) {
     .project {
         margin-right: 5rem;
         max-height: 270px;
     }
-    
+
     .project.svg {
         max-height: 194px;
         padding-top: 4rem;
         height: 250px;
         width: 250px;
     }
-    
+
     .image-adjustment>img {
         max-height: 236px;
         padding-top: 3rem;
     }
-    
+
     .container-techstack {
         height: 100vw;
         padding-top: 10rem;
     }
-    
+
     .project>img {
         max-height: 270px;
     }
+
     .project-list.mobile {
         display: none;
     }
+
     .desktop-list {
         display: block;
     }
 }
 
-.techstack-header {
-    text-align: center;
-    font-size: xxx-large;
-    color: whitesmoke;
-    margin: auto 20%;
-}
+
 
 .profile-background {
     background-attachment: fixed;

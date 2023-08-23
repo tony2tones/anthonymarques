@@ -3,10 +3,8 @@
   flex-flow: row wrap;
   justify-content: center;
   grid-gap: 2em;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
-
-
 
 .project img {
   max-height: 280px;
@@ -34,15 +32,18 @@
 
 
 @media (max-width:420px) {
-  
+  .project-list {
+    padding-top: 1rem;
+  }
+
   .work-header {
     font-size: x-large;
   }
-  
+
   .project.mobile>img {
     display: block;
   }
-  
+
   .project.desktop>img {
     display: none;
   }
@@ -52,11 +53,15 @@
   .work-header {
     font-size: x-large;
   }
+
   .project.mobile>img {
     display: none;
   }
-  
+
   .project.desktop>img {
     display: block;
   }
+
+ 
+
 }
