@@ -69,7 +69,45 @@
 
 .tech-card:nth-child(5) {
     background-color: blue;
+    transform: translate(-56%, -349%) rotate(-24deg);
+}
+
+.tech-card:nth-child(6) {
+    background-color: lightblue;
     transform: translate(30%, -166%) rotate(2deg)
+}
+
+.tech-card-group:hover > .tech-card:nth-child(1) {
+    background-color: red;
+    transform:translate(177%, 34%) rotate(0deg)
+}
+.tech-card-group:hover > .tech-card:nth-child(2) {
+    background-color: green;
+    transform:translate(84%, -66%) rotate(0deg);
+}
+
+// .tech-card-group:hover > .tech-card:nth-child(5) {
+//     background-color: blue;
+//     transform: translate(-56%, -349%) rotate(-24deg); 
+// }
+.tech-card:nth-child(2) {
+    background-color: green;
+    transform: translate(45%, -69%) rotate(11deg)
+}
+.tech-card:nth-child(3) {
+    background-color: yellow;
+    transform: translate(18%, -166%) rotate(2deg)
+}
+
+.tech-card:nth-child(4) {
+    background-color: rgb(75, 138, 255);
+    transform: translate(-41%, -251%) rotate(-10deg);
+    transform: translate(30%, -166%) rotate(2deg)
+}
+
+.tech-card:nth-child(5) {
+    background-color: blue;
+    transform:translate(-84%, -349%) rotate(-16deg);
 }
 
 // @media handheld,
