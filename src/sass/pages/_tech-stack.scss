@@ -19,6 +19,13 @@
     }
 }
 
+.desktop-list {
+    margin: 0px;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
 .techstack-header {
     text-align: center;
     font-size: xxx-large;
@@ -26,117 +33,159 @@
     margin: auto 20%;
 }
 
-@media handheld,
-screen and (max-width: 400px) {
-    .project {
-        max-height: 150px;
-    }
-
-    .techstack-header {
-        font-size: large;
-        margin: auto 10%;
-    }
-
+.tech-card-group,
+.card {
+    aspect-ratio: 5/7;
 }
 
-@media handheld,
-screen and (max-width: 950px) {
-    .container-techstack {
-        padding-top: 10rem;
-    }
-
-    .desktop-list {
-        display: none;
-    }
-
-    .project-list.mobile {
-        display: flex;
-    }
-
-    /* Mobile-specific styles here */
-    .project>img {
-        margin-right: 0rem;
-        max-height: 190px;
-    }
-
-    .image-adjustment>img {
-        max-height: 120px;
-        padding-top: 2rem;
-    }
-
-    .project.svg {
-        max-height: 120px;
-        padding-top: 2rem;
-        width: 150px;
-    }
-
-    .techstack-header {
-        text-align: center;
-        font-size: xx-large;
-        color: whitesmoke;
-        margin: auto 20%;
-    }
-
-    .project-list {
-        grid-gap: 0rem;
-    }
+.card {
+    background-color: rgba(212, 255, 0, 0.05);
+    border-radius: 1vmin;
+    // position: absolute;
 }
 
-@media (min-width: 950px) and (max-width: 2400px) {
-    .project {
-        margin-right: 5rem;
-        max-height: 270px;
-    }
-
-    .project.svg {
-        max-height: 194px;
-        padding-top: 4rem;
-        height: 250px;
-        width: 250px;
-    }
-
-    .image-adjustment>img {
-        max-height: 236px;
-        padding-top: 3rem;
-    }
-
-    .container-techstack {
-        height: 100vw;
-        padding-top: 10rem;
-    }
-
-    .project>img {
-        max-height: 270px;
-    }
-
-    .project-list.mobile {
-        display: none;
-    }
-
-    .desktop-list {
-        display: block;
-    }
+.tech-card {
+    width: 30vmin;
+    background-color: cornsilk;
 }
 
-
-
-.profile-background {
-    background-attachment: fixed;
-    height: 100vh;
-    background-repeat: repeat-y;
-    animation: slideTopDown 1800s infinite linear;
-    background-size: cover;
-    overflow: hidden;
-    background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
-
-    background-repeat: repeat-x;
-    animation: slideTopDown 1800s infinite linear;
-
+.tech-card:nth-child(1) {
+    background-color: red;
+    transform:translate(87%, 34%) rotate(16deg);
+}
+.tech-card:nth-child(2) {
+    background-color: green;
+    transform: translate(45%, -69%) rotate(11deg)
+}
+.tech-card:nth-child(3) {
+    background-color: yellow;
+    transform: translate(18%, -166%) rotate(2deg)
 }
 
-.project-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    grid-gap: 1em;
+.tech-card:nth-child(4) {
+    background-color: rgb(75, 138, 255);
+    transform: translate(-41%, -251%) rotate(-10deg);
 }
+
+.tech-card:nth-child(5) {
+    background-color: blue;
+    transform: translate(30%, -166%) rotate(2deg)
+}
+
+// @media handheld,
+// screen and (max-width: 400px) {
+//     .project {
+//         max-height: 150px;
+//     }
+
+//     .techstack-header {
+//         font-size: large;
+//         margin: auto 10%;
+//     }
+
+// }
+
+// @media handheld,
+// screen and (max-width: 950px) {
+//     .container-techstack {
+//         padding-top: 10rem;
+//     }
+
+//     .desktop-list {
+//         margin: 0px;
+//         display: grid;
+//         height: 100vh;
+//         place-items: center;
+//     }
+
+//     .project-list.mobile {
+//         display: flex;
+//     }
+
+//     /* Mobile-specific styles here */
+//     .project>img {
+//         margin-right: 0rem;
+//         max-height: 190px;
+//     }
+
+//     .image-adjustment>img {
+//         max-height: 120px;
+//         padding-top: 2rem;
+//     }
+
+//     .project.svg {
+//         max-height: 120px;
+//         padding-top: 2rem;
+//         width: 150px;
+//     }
+
+//     .techstack-header {
+//         text-align: center;
+//         font-size: xx-large;
+//         color: whitesmoke;
+//         margin: auto 20%;
+//     }
+
+//     .project-list {
+//         grid-gap: 0rem;
+//     }
+// }
+
+// @media (min-width: 950px) and (max-width: 2400px) {
+//     .project {
+//         margin-right: 5rem;
+//         max-height: 270px;
+//     }
+
+//     .project.svg {
+//         max-height: 194px;
+//         padding-top: 4rem;
+//         height: 250px;
+//         width: 250px;
+//     }
+
+//     .image-adjustment>img {
+//         max-height: 236px;
+//         padding-top: 3rem;
+//     }
+
+//     .container-techstack {
+//         height: 100vw;
+//         padding-top: 10rem;
+//     }
+
+//     .project>img {
+//         max-height: 270px;
+//     }
+
+//     .project-list.mobile {
+//         display: none;
+//     }
+
+//     .desktop-list {
+//         display: grid;
+//     }
+// }
+
+
+
+// .profile-background {
+//     background-attachment: fixed;
+//     height: 100vh;
+//     background-repeat: repeat-y;
+//     animation: slideTopDown 1800s infinite linear;
+//     background-size: cover;
+//     overflow: hidden;
+//     background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
+
+//     background-repeat: repeat-x;
+//     animation: slideTopDown 1800s infinite linear;
+
+// }
+
+// .project-list {
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: center;
+//     grid-gap: 1em;
+// }
