@@ -51,7 +51,7 @@
 }
 
 .tech-card:nth-child(1) {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     background-image: url('../../assets/images/tailwind-css-logo-vector.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -105,6 +105,10 @@
     transform: translate(105%, -66%) rotate(0deg);
 }
 
+.tech-card-group:hover>.tech-card:nth-child(3) {
+    transform: translate(10%, -166%) rotate(0deg);
+}
+
 .tech-card-group:hover>.tech-card:nth-child(4) {
     // background-color: rgb(75, 138, 255);
     transform: translate(-85%, -266%) rotate(0deg);
@@ -114,9 +118,6 @@
     transform: translate(-180%, -366%) rotate(0deg);
 }
 
-.tech-card-group:hover>.tech-card:nth-child(3) {
-    transform: translate(10%, -166%) rotate(0deg);
-}
 
 
 // .tech-card:nth-child(2) {
@@ -146,6 +147,29 @@ screen and (max-width: 950px) {
     .card {
         height: 27vh;
     }
+
+    // ON HOVER TECH CARDS SECTION
+    .tech-card:nth-child(1) {
+        transform: translate(-2%, 214%) rotate(0deg);
+    }
+
+    .tech-card:nth-child(2) {
+        transform: translate(-55%, 4%) rotate(0deg);
+    }
+
+    .tech-card:nth-child(3) {
+        transform: translate(56%, -96%) rotate(0deg);
+    }
+
+    .tech-card:nth-child(4) {
+        // background-color: rgb(75, 138, 255);
+        transform: translate(56%, -306%) rotate(0deg);
+    }
+
+    .tech-card:nth-child(5) {
+        transform: translate(-55%, -405%) rotate(0deg);
+    }
+
 }
 
 //     .desktop-list {
