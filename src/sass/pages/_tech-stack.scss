@@ -56,22 +56,34 @@
 }
 
 .tech-card:nth-child(2) {
-    background-color: green;
+    background-color: rgb(179, 215, 81);
+    background-image: url('../../assets/images/node_logo.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     transform: translate(60%, -66%) rotate(10deg);
 }
 
 .tech-card:nth-child(3) {
-    background-color: yellow;
+    background-color: rgb(247, 223, 30);
     transform: translate(10%, -166%) rotate(0deg);
+    background-image: url('../../assets/images/icons/javascript-yellow-box-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .tech-card:nth-child(4) {
-    background-color: rgb(75, 138, 255);
+    background-color: rgb(1, 122, 203);
+    background-image: url('../../assets/images/typscript_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     transform: translate(-39%, -261%) rotate(-7deg);
 }
 
 .tech-card:nth-child(5) {
-    background-color: red;
+    background-color: rgb(187, 19, 52);
     background-image: url('../../assets/images/angular_logo_card.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -87,22 +99,19 @@
 }
 
 .tech-card-group:hover>.tech-card:nth-child(2) {
-    background-color: green;
     transform: translate(105%, -66%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(4) {
-    background-color: rgb(75, 138, 255);
+    // background-color: rgb(75, 138, 255);
     transform: translate(-85%, -266%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(5) {
-    background-color: blue;
     transform: translate(-180%, -366%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(3) {
-    background-color: yellow;
     transform: translate(10%, -166%) rotate(0deg);
 }
 
@@ -127,11 +136,14 @@
 
 // }
 
-// @media handheld,
-// screen and (max-width: 950px) {
-//     .container-techstack {
-//         padding-top: 10rem;
-//     }
+@media handheld,
+screen and (max-width: 950px) {
+
+    .tech-card-group,
+    .card {
+        height: 27vh;
+    }
+}
 
 //     .desktop-list {
 //         margin: 0px;
