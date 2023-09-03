@@ -42,6 +42,7 @@
 .card {
     background-color: rgba(212, 255, 0, 0.05);
     border-radius: 1vmin;
+    transition: transform 800ms cubic-bezier(0.5, .43, .25, .95);
 }
 
 .tech-card {
@@ -61,45 +62,6 @@
 
 .tech-card:nth-child(3) {
     background-color: yellow;
-    transform: translate(18%, -166%) rotate(2deg)
-}
-
-.tech-card:nth-child(4) {
-    background-color: rgb(75, 138, 255);
-    transform: translate(-41%, -251%) rotate(-10deg);
-}
-
-.tech-card:nth-child(5) {
-    background-color: blue;
-    transform: translate(-56%, -349%) rotate(-24deg);
-}
-
-.tech-card:nth-child(6) {
-    background-color: lightblue;
-    transform: translate(30%, -166%) rotate(2deg)
-}
-
-// ON HOVER TECH CARDS SECTION
-// .tech-card-group:hover > .tech-card:nth-child(1) {
-//     background-color: red;
-//     transform:translate(177%, 34%) rotate(0deg)
-// }
-// .tech-card-group:hover > .tech-card:nth-child(2) {
-//     background-color: green;
-//     transform:translate(84%, -66%) rotate(0deg);
-// }
-
-// .tech-card-group:hover > .tech-card:nth-child(5) {
-//     background-color: blue;
-//     transform: translate(-56%, -349%) rotate(-24deg); 
-// }
-// .tech-card:nth-child(2) {
-//     background-color: green;
-//     transform: translate(45%, -69%) rotate(11deg)
-// }
-
-.tech-card:nth-child(3) {
-    background-color: yellow;
     transform: translate(10%, -166%) rotate(0deg);
 }
 
@@ -112,6 +74,48 @@
     background-color: blue;
     transform: translate(-84%, -349%) rotate(-16deg);
 }
+
+.tech-card:nth-child(6) {
+    background-color: lightblue;
+    transform: translate(30%, -166%) rotate(2deg)
+}
+
+// ON HOVER TECH CARDS SECTION
+.tech-card-group:hover>.tech-card:nth-child(1) {
+    background-color: red;
+    transform: translate(205%, 34%) rotate(0deg)
+}
+
+.tech-card-group:hover>.tech-card:nth-child(2) {
+    background-color: green;
+    transform: translate(105%, -66%) rotate(0deg);
+    // box-shadow: 10px 0 5px -2px #888;
+}
+
+.tech-card-group:hover>.tech-card:nth-child(4) {
+    background-color: rgb(75, 138, 255);
+    transform: translate(-85%, -266%) rotate(0deg);
+    // box-shadow: 10px 0 5px -2px #888;
+}
+
+.tech-card-group:hover>.tech-card:nth-child(5) {
+    background-color: blue;
+    transform: translate(-180%, -366%) rotate(0deg);
+    // box-shadow: 10px 0 5px -2px #96a7ff;
+}
+
+.tech-card-group:hover>.tech-card:nth-child(3) {
+    background-color: yellow;
+    transform: translate(10%, -166%) rotate(0deg);
+}
+
+
+// .tech-card:nth-child(2) {
+//     background-color: green;
+//     transform: translate(45%, -69%) rotate(11deg)
+// }
+
+
 
 // @media handheld,
 // screen and (max-width: 400px) {
