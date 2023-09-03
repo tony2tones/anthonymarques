@@ -51,7 +51,11 @@
 }
 
 .tech-card:nth-child(1) {
-    background-color: red;
+    background-color: rgb(255,255,255);
+    background-image: url('../../assets/images/tailwind-css-logo-vector.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     transform: translate(111%, 40%) rotate(19deg)
 }
 
@@ -94,7 +98,6 @@
 
 // ON HOVER TECH CARDS SECTION
 .tech-card-group:hover>.tech-card:nth-child(1) {
-    background-color: red;
     transform: translate(205%, 34%) rotate(0deg)
 }
 
