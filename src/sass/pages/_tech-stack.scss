@@ -71,13 +71,13 @@
 }
 
 .tech-card:nth-child(5) {
-    background-color: blue;
-    transform: translate(-84%, -349%) rotate(-16deg);
-}
+    background-color: red;
+    background-image: url('../../assets/images/angular_logo_card.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
-.tech-card:nth-child(6) {
-    background-color: lightblue;
-    transform: translate(30%, -166%) rotate(2deg)
+    transform: translate(-84%, -349%) rotate(-16deg);
 }
 
 // ON HOVER TECH CARDS SECTION
@@ -89,19 +89,16 @@
 .tech-card-group:hover>.tech-card:nth-child(2) {
     background-color: green;
     transform: translate(105%, -66%) rotate(0deg);
-    // box-shadow: 10px 0 5px -2px #888;
 }
 
 .tech-card-group:hover>.tech-card:nth-child(4) {
     background-color: rgb(75, 138, 255);
     transform: translate(-85%, -266%) rotate(0deg);
-    // box-shadow: 10px 0 5px -2px #888;
 }
 
 .tech-card-group:hover>.tech-card:nth-child(5) {
     background-color: blue;
     transform: translate(-180%, -366%) rotate(0deg);
-    // box-shadow: 10px 0 5px -2px #96a7ff;
 }
 
 .tech-card-group:hover>.tech-card:nth-child(3) {
