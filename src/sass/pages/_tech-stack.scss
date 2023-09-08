@@ -19,6 +19,14 @@
     }
 }
 
+.desktop-list {
+    margin: 0px;
+    margin-top: -18rem;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
 .techstack-header {
     text-align: center;
     font-size: xxx-large;
@@ -26,117 +34,171 @@
     margin: auto 20%;
 }
 
-@media handheld,
-screen and (max-width: 400px) {
-    .project {
-        max-height: 150px;
-    }
-
-    .techstack-header {
-        font-size: large;
-        margin: auto 10%;
-    }
-
+.tech-card-group,
+.card {
+    height: 47vh;
 }
+
+.card {
+    background-color: rgba(212, 255, 0, 0.05);
+    border-radius: 1vmin;
+    transition: transform 800ms cubic-bezier(0.5, .43, .25, .95);
+}
+
+.tech-card {
+    width: 30vmin;
+    background-color: cornsilk;
+}
+
+.tech-card:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../assets/images/tailwind-css-logo-vector.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(111%, 40%) rotate(19deg)
+}
+
+.tech-card:nth-child(2) {
+    background-color: rgb(179, 215, 81);
+    background-image: url('../../assets/images/node_logo.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(60%, -66%) rotate(10deg);
+}
+
+.tech-card:nth-child(3) {
+    background-color: rgb(247, 223, 30);
+    transform: translate(10%, -166%) rotate(0deg);
+    background-image: url('../../assets/images/icons/javascript-yellow-box-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.tech-card:nth-child(4) {
+    background-color: rgb(1, 122, 203);
+    background-image: url('../../assets/images/typscript_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(-39%, -261%) rotate(-7deg);
+}
+
+.tech-card:nth-child(5) {
+    background-color: rgb(187, 19, 52);
+    background-image: url('../../assets/images/angular_logo_card.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    transform: translate(-84%, -349%) rotate(-16deg);
+}
+
+// ON HOVER TECH CARDS SECTION
+.tech-card-group:hover>.tech-card:nth-child(1) {
+    transform: translate(205%, 34%) rotate(0deg)
+}
+
+.tech-card-group:hover>.tech-card:nth-child(2) {
+    transform: translate(105%, -66%) rotate(0deg);
+}
+
+.tech-card-group:hover>.tech-card:nth-child(3) {
+    transform: translate(10%, -166%) rotate(0deg);
+}
+
+.tech-card-group:hover>.tech-card:nth-child(4) {
+    // background-color: rgb(75, 138, 255);
+    transform: translate(-85%, -266%) rotate(0deg);
+}
+
+.tech-card-group:hover>.tech-card:nth-child(5) {
+    transform: translate(-180%, -366%) rotate(0deg);
+}
+
 
 @media handheld,
 screen and (max-width: 950px) {
-    .container-techstack {
-        padding-top: 10rem;
-    }
-
     .desktop-list {
-        display: none;
+        margin-bottom: 15rem;
     }
 
-    .project-list.mobile {
-        display: flex;
+    .tech-card-group,
+    .card {
+        height: 27vh;
     }
 
-    /* Mobile-specific styles here */
-    .project>img {
-        margin-right: 0rem;
-        max-height: 190px;
+    // ON HOVER TECH CARDS SECTION
+    .tech-card:nth-child(1) {
+        transform: translate(-2%, 214%) rotate(0deg);
     }
 
-    .image-adjustment>img {
-        max-height: 120px;
-        padding-top: 2rem;
+    .tech-card:nth-child(2) {
+        transform: translate(-55%, 4%) rotate(0deg);
     }
 
-    .project.svg {
-        max-height: 120px;
-        padding-top: 2rem;
-        width: 150px;
+    .tech-card:nth-child(3) {
+        transform: translate(56%, -96%) rotate(0deg);
     }
+
+    .tech-card:nth-child(4) {
+        // background-color: rgb(75, 138, 255);
+        transform: translate(56%, -306%) rotate(0deg);
+    }
+
+    .tech-card:nth-child(5) {
+        transform: translate(-55%, -405%) rotate(0deg);
+    }
+
+    .tech-card-group {
+        pointer-events: none;
+    }
+
+}
+
+@media handheld,
+(max-width: 420px) {
 
     .techstack-header {
-        text-align: center;
-        font-size: xx-large;
-        color: whitesmoke;
-        margin: auto 20%;
-    }
-
-    .project-list {
-        grid-gap: 0rem;
-    }
-}
-
-@media (min-width: 950px) and (max-width: 2400px) {
-    .project {
-        margin-right: 5rem;
-        max-height: 270px;
-    }
-
-    .project.svg {
-        max-height: 194px;
-        padding-top: 4rem;
-        height: 250px;
-        width: 250px;
-    }
-
-    .image-adjustment>img {
-        max-height: 236px;
-        padding-top: 3rem;
-    }
-
-    .container-techstack {
-        height: 100vw;
-        padding-top: 10rem;
-    }
-
-    .project>img {
-        max-height: 270px;
-    }
-
-    .project-list.mobile {
-        display: none;
+        padding-bottom: 5rem;
     }
 
     .desktop-list {
-        display: block;
+        margin-bottom: 4rem;
     }
-}
 
+    .tech-card-group,
+    .card {
+        height: 27vh;
+    }
 
+    // ON HOVER TECH CARDS SECTION
+    .tech-card:nth-child(1) {
+        transform: translate(0%, 244%) rotate(0deg);
+        height: 10rem;
+    }
 
-.profile-background {
-    background-attachment: fixed;
-    height: 100vh;
-    background-repeat: repeat-y;
-    animation: slideTopDown 1800s infinite linear;
-    background-size: cover;
-    overflow: hidden;
-    background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
+    .tech-card:nth-child(2) {
+        transform: translate(-34%, 8%) rotate(-11deg)
+    }
 
-    background-repeat: repeat-x;
-    animation: slideTopDown 1800s infinite linear;
+    .tech-card:nth-child(3) {
+        transform: translate(51%, -88%) rotate(11deg)
+    }
 
-}
+    .tech-card:nth-child(4) {
+        // background-color: rgb(75, 138, 255);
+        transform: translate(57%, -304%) rotate(11deg)
+    }
 
-.project-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    grid-gap: 1em;
+    .tech-card:nth-child(5) {
+        transform: translate(-33%, -403%) rotate(-11deg);
+    }
+
+    .tech-card-group {
+        pointer-events: none;
+    }
+
 }
