@@ -166,7 +166,7 @@ screen and (max-width: 950px) {
     }
 
     .desktop-list {
-        margin-bottom: 4rem;
+        margin-bottom: 15rem;
     }
 
     .tech-card-group,
@@ -175,27 +175,27 @@ screen and (max-width: 950px) {
     }
 
     // ON HOVER TECH CARDS SECTION
-    .tech-card:nth-child(1) {
-        transform: translate(0%, 244%) rotate(0deg);
-        height: 10rem;
-    }
+    // .tech-card:nth-child(1) {
+    //     transform: translate(0%, 244%) rotate(0deg);
+    //     height: 10rem;
+    // }
 
-    .tech-card:nth-child(2) {
-        transform: translate(-34%, 8%) rotate(-11deg)
-    }
+    // .tech-card:nth-child(2) {
+    //     transform: translate(-34%, 8%) rotate(-11deg)
+    // }
 
-    .tech-card:nth-child(3) {
-        transform: translate(51%, -88%) rotate(11deg)
-    }
+    // .tech-card:nth-child(3) {
+    //     transform: translate(51%, -88%) rotate(11deg)
+    // }
 
-    .tech-card:nth-child(4) {
-        // background-color: rgb(75, 138, 255);
-        transform: translate(57%, -304%) rotate(11deg)
-    }
+    // .tech-card:nth-child(4) {
+    //     // background-color: rgb(75, 138, 255);
+    //     transform: translate(57%, -304%) rotate(11deg)
+    // }
 
-    .tech-card:nth-child(5) {
-        transform: translate(-33%, -403%) rotate(-11deg);
-    }
+    // .tech-card:nth-child(5) {
+    //     transform: translate(-33%, -403%) rotate(-11deg);
+    // }
 
     .tech-card-group {
         pointer-events: none;
