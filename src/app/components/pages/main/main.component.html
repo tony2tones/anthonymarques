@@ -1,27 +1,26 @@
 <div class="flow main__container">
-    <app-navigation (messageBus)="scrollToAnchor($event)"></app-navigation>
-    <!-- <app-profile-card [animationToggle]="doAnimation"></app-profile-card> -->
-    <div class="content" id="home">
-        <!-- <div class="content" (scroll)="onScroll($event)"> -->
-        <div class="bio-card">
-
-            <h2>I'm Anthony Marques</h2>
-            <p>
-                I am a self-taught FrontEnd developer. I do love people and helping others to make robust web
-                applications.
-            </p>
-        </div>
-        <div id="tech-stack">
-            <section>
-                <app-tech-stack></app-tech-stack>
-            </section>
-        </div>
-        <section id="resume">
-            <app-resume></app-resume>
-        </section>
-        <section id="work">
-            <app-work></app-work>
-        </section>
-        
+  <app-navigation (messageBus)="scrollToAnchor($event)"></app-navigation>
+  <!-- <app-profile-card [animationToggle]="doAnimation"></app-profile-card> -->
+  <div class="content" id="home">
+    <!-- <div class="content" (scroll)="onScroll($event)"> -->
+    <div class="bio-card">
+      <h2>I'm Anthony Marques</h2>
+      <p>
+        I am a self-taught FrontEnd developer. I do love people and helping
+        others to make robust web applications.
+      </p>
     </div>
+    <div id="tech-stack">
+      <section>
+        <app-tech-stack></app-tech-stack>
+      </section>
+    </div>
+    <section id="resume">
+      <app-resume></app-resume>
+    </section>
+    <section id="work">
+      <app-work></app-work>
+    </section>
+    <app-footer></app-footer>
+  </div>
 </div>

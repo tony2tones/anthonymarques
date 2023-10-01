@@ -10,6 +10,7 @@ import { TechStackComponent } from './components/tech-stack/tech-stack.component
 import { SvgTailwindcssComponent } from './components/svg/svg-tailwindcss/svg-tailwindcss.component';
 import { ResumeComponent } from './components/pages/resume/resume.component';
 import { WorkComponent } from './components/pages/work/work.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [{  path: 'home', component: LandingPageComponent },
 { path: '', redirectTo: '/home' , pathMatch:'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [{  path: 'home', component: LandingPageComponent },
     SvgTailwindcssComponent,
     ResumeComponent,
     WorkComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
