@@ -57,7 +57,7 @@
       width: 40rem;
       position: relative;
 
-      &>img {
+      & > img {
         position: absolute;
         width: 370px;
         padding-left: 2rem;
@@ -102,7 +102,7 @@
       animation-duration: 3s;
       animation-iteration-count: 1;
 
-      &>img {
+      & > img {
         animation: profileImgShrink 4s;
         position: absolute;
         width: 16rem;
@@ -134,13 +134,18 @@
   }
 }
 
-
 .content {
   height: 100vh;
+  
   overflow: auto;
 }
 
-#tech-stack{
+#tech-stack {
+  margin-bottom: 20rem; /* Add margin to create space between elements */
+}
+
+
+#tech-stack {
   padding-top: 5rem;
 }
 
@@ -155,8 +160,7 @@
   height: inherit;
 }
 
-@media(max-width: 644px) {
-
+@media (max-width: 644px) {
   /* Your CSS styles for tablet devices */
   .bio-card {
     margin: 2rem;
@@ -171,20 +175,14 @@
   }
 }
 
-
-
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
-
   /* Your CSS styles for tablet devices */
   .main__container {
-
     font-size: xx-large;
   }
-
 }
 
 @media (max-width: 780px) {
-
   /* Your CSS styles for tablet devices */
   .main__container {
     font-size: x-large;
