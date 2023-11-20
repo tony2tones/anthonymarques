@@ -38,102 +38,6 @@
   }
 }
 
-.main__container {
-  display: flex;
-  flex-direction: column;
-
-  &__profile__container {
-    padding-top: 3rem;
-  }
-
-  &__profile__card {
-    flex-direction: column;
-    margin-top: 10rem;
-
-    &__profile_image {
-      background-color: azure;
-      border-radius: 10rem;
-      height: 40rem;
-      width: 40rem;
-      position: relative;
-
-      & > img {
-        position: absolute;
-        width: 370px;
-        padding-left: 2rem;
-      }
-    }
-
-    &__socials {
-      & ul.socials {
-        position: relative;
-        display: flex;
-        top: 14rem;
-        left: 8rem;
-        list-style: none;
-
-        & li {
-          padding-right: 5rem;
-
-          & .fa-brands {
-            scale: 6;
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
-}
-
-.main__container__profile__container.profile__shrink {
-  flex-direction: column;
-
-  & .main__container__profile__card {
-    flex-direction: column;
-    margin-top: 10rem;
-
-    &__profile_image {
-      background-color: rgb(105, 210, 223);
-      border-radius: 10rem;
-      position: relative;
-      height: 18rem;
-      width: 20rem;
-      animation-name: profileCardShrink;
-      animation-duration: 3s;
-      animation-iteration-count: 1;
-
-      & > img {
-        animation: profileImgShrink 4s;
-        position: absolute;
-        width: 16rem;
-        padding-left: 2rem;
-      }
-    }
-
-    &__socials {
-      & ul.socials {
-        position: relative;
-        animation: profileSocials 4s forwards;
-        list-style: none;
-
-        & li {
-          flex-direction: column;
-          padding-right: 5rem;
-          padding-top: 2rem;
-          top: 14rem;
-          left: 8rem;
-
-          & i.fa-brands {
-            scale: 3;
-            padding: 1rem;
-            color: rgb(127, 184, 235);
-          }
-        }
-      }
-    }
-  }
-}
-
 .content {
   height: 100vh;
   
@@ -146,27 +50,40 @@
 
 
 #tech-stack {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .bio-card {
   word-wrap: break-word;
+  background-color: #47505554;
   color: aliceblue;
-  width: auto;
-  margin: 5rem;
-  margin-left: 16rem;
-  margin-top: 25rem;
+  width: calc(100% - 60px);
   font-size: 3rem;
-  height: inherit;
+  padding: 2rem;
+  height: 40%;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  line-height:50px;
 }
+
 
 @media (max-width: 644px) {
   /* Your CSS styles for tablet devices */
+  .bio-card h2 {
+    padding-bottom: 6rem;
+  }
   .bio-card {
     margin: 2rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     padding-top: 10rem;
     height: 30rem;
+    line-height:50px;
+  }
+
+  .bio-card + h2 {
+    padding-bottom: 1.5rem;
   }
 
   .content {
@@ -176,6 +93,18 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
+
+  .bio-card h2 {
+    padding-bottom: 6rem;
+  }
+  .bio-card {
+    margin: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 10rem;
+    height: 30rem;
+    line-height:50px;
+  }
   /* Your CSS styles for tablet devices */
   .main__container {
     font-size: xx-large;

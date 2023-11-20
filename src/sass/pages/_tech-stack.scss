@@ -23,15 +23,15 @@
     margin: 0px;
     margin-top: -18rem;
     display: grid;
-    height: 100vh;
+    height: 80vh;
     place-items: center;
 }
 
 .techstack-header {
-    text-align: center;
+    text-align: left;
     font-size: xxx-large;
+    padding-bottom: 2rem;
     color: whitesmoke;
-    margin: auto 20%;
 }
 
 .tech-card-group,
@@ -48,6 +48,16 @@
 .tech-card {
     width: 30vmin;
     background-color: cornsilk;
+}
+
+.desktop-list {
+    background-color: #47505554;
+  color: aliceblue;
+  width: calc(100% - 60px);
+  height: 80%;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .tech-card:nth-child(1) {

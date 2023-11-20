@@ -1,9 +1,14 @@
-<div class="navToggle">X</div>
 <nav class="navBar">
-  <ul>
-    <li (click)="goDown('home')"><a> Home</a></li>
-    <li (click)="goDown('tech-stack')"><a>Tech stack</a></li>
-    <li (click)="goDown('resume')"><a>Resume</a></li>
-    <li (click)="goDown('work')"><a>Work</a></li>
-  </ul>
+  <div class="header">
+    <div class="title">
+      <h1>Tony Marques</h1>
+    </div>
+    <ul>
+      <!-- <div class="navToggle">X</div> -->
+      <li><a (click)="goDown('home')"> Home</a></li>
+      <li><a (click)="goDown('tech-stack')">Tech stack</a></li>
+      <li><a (click)="goDown('resume')">Resume</a></li>
+      <li><a (click)="goDown('work')">Work</a></li>
+    </ul>
+  </div>
 </nav>
