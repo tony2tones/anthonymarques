@@ -53,18 +53,25 @@
   padding-top: 3rem;
 }
 
+.bio-card h2 {
+  padding-bottom: 6rem;
+
+  line-height:50px;
+}
+
 .bio-card {
   word-wrap: break-word;
   background-color: #47505554;
   color: aliceblue;
-  width: calc(100% - 60px);
   font-size: 3rem;
   padding: 2rem;
   height: 40%;
   border-radius: 2rem;
+  margin: 1rem;
   margin-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
   line-height:50px;
+  overflow-wrap: break-word;
 }
 
 
@@ -80,6 +87,8 @@
     padding-top: 10rem;
     height: 30rem;
     line-height:50px;
+
+  overflow-wrap: break-word;
   }
 
   .bio-card + h2 {
@@ -113,6 +122,9 @@
 
 @media (max-width: 780px) {
   /* Your CSS styles for tablet devices */
+  .bio-card h2 {
+    padding-bottom: 6rem;
+  }
   .main__container {
     font-size: x-large;
   }
