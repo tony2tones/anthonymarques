@@ -56,25 +56,25 @@ nav {
     }
 
     &::before{
+      transition: 0.3s ease-out;
       top:30%;
     }
 
     &::after{
+      transition: 0.3s ease-out;
       top:70%;
     }
 
     &:focus {
       &::before{
         top:50%;
-        transition:
-      transform 0.7s ease,top 0.7 ease;
+        transition: 0.3s ease-out;
         transform: rotate(-30deg) translateY(-50%);
       }
       &::after{
         top:50%;
-        transition:
-      transform 0.7s ease,top 0.7 ease;
-        transform: rotate(-30deg) translateY(-50%);
+        transition: 0.2s ease-out;
+        transform: rotate(30deg) translateY(-50%);
       }
     }
 
