@@ -17,7 +17,7 @@ header {
 }
 .title {
   display: flex;
-  font-size: xx-large;
+  font-size: xx-large
 }
 
 nav {
@@ -78,6 +78,9 @@ nav {
       }
       ul {
         display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
       }
     }
 
@@ -85,6 +88,7 @@ nav {
 
 }
 nav ul {
+  list-style-type: none;
   display: flex;
   flex-wrap: nowrap;
   gap: 3rem;
@@ -92,6 +96,7 @@ nav ul {
   margin: 0;
   padding: 0;
   @media screen and (max-width: 1156px) {
+    text-decoration: none;
     position: absolute;
     flex-direction: column;
     z-index: 1;
@@ -104,13 +109,22 @@ nav ul {
     display: none;
   }
 
-  @media screen and (max-width: 590px) {
-    ul {
+  @media screen and (max-width: 610px) {
+    text-decoration: none;
     display: inline-block;
     width: 100vw;
     height: 100vh;
     right: -25px;
-    }
+    top:-70%;
+  }
+
+  li {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+  }
+  a {
+    
   }
 }
 
@@ -125,9 +139,14 @@ nav li a{
   border-bottom:1px;
   border-bottom-color:#000000;
   border-bottom-style:solid;
+  
+  @media screen and (max-width: 610px) {
+    font-size: xx-large;
+
+  }
   }
 
-nav ul li {
+// nav ul li {
   // list-style-type: none;
   // text-align: center;
   // display: inline-block;
@@ -135,34 +154,34 @@ nav ul li {
   // padding-left: 1rem;
   // width: 15rem;
   // font-size: medium;
-  @media screen and (max-width: 1156px) {
-    margin:0;
-    a {
-      display: block;
-      text-align: center;
-      min-width: 125px;
-    }
+//   @media screen and (max-width: 1156px) {
+//     margin:0;
+//     a {
+//       display: block;
+//       text-align: center;
+//       min-width: 125px;
+//     }
 
-    &.active a {
-      background-color: #333;
-      border-width: 1px;
-    }
-    width: 40px;
-    height: 25px;
-    border-radius: 3px;
-    background-color: grey;
-    z-index: 20;
-    padding-right: 15rem;
-    background-color: #333;
-  }
-}
+//     &.active a {
+//       background-color: #333;
+//       border-width: 1px;
+//     }
+//     width: 40px;
+//     height: 25px;
+//     border-radius: 3px;
+//     background-color: grey;
+//     z-index: 20;
+//     padding-right: 15rem;
+//     background-color: #333;
+//   }
+// }
 nav ul li:hover {
-  background-color: #088;
-  color: black;
+//   background-color: #088;
+//   color: black;
   cursor: pointer;
-  border-radius: 3.5rem;
+//   border-radius: 3.5rem;
 }
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
+// nav ul li a {
+//   text-decoration: none;
+//   color: #fff;
+// }
