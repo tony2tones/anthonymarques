@@ -110,6 +110,7 @@ nav ul {
   }
 
   @media screen and (max-width: 610px) {
+    background: rgba(#111, 0.9);
     text-decoration: none;
     display: inline-block;
     width: 100vw;
@@ -130,7 +131,7 @@ nav ul {
 
 nav li a{
   font-family:Arial;
-  font-size:12px;
+  font-size:larger;
   text-decoration: none;
   float:left;
   padding:10px;
