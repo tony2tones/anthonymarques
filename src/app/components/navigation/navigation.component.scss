@@ -103,6 +103,10 @@ nav {
     &:focus + .close-mobile-menu {
       display: inline-block;
     }
+    &:focus-within + ul li.list-item,
+    &:focus + ul li.list-item {
+      display: inline;
+    }
   }
 }
 nav ul {
@@ -160,10 +164,10 @@ nav ul {
     text-decoration: none;
     padding-bottom: 1rem;
 
-    // &:focus,
-    // &:focus-within {
-    // display: none;
-    // }
+    &:focus,
+    &:focus-within {
+display: inline-block;
+    }
   }
   li:hover {
     cursor: pointer;
