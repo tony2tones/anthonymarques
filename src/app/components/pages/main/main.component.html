@@ -1,15 +1,15 @@
 <div class="flow main__container">
   <app-navigation (messageBus)="scrollToAnchor($event)"></app-navigation>
   <!-- <app-profile-card [animationToggle]="doAnimation"></app-profile-card> -->
-  <div class="content" id="home">
+  <div class="wrapper" id="home">
     <!-- <div class="content" (scroll)="onScroll($event)"> -->
-    <div class="bio-card">
-      <h2>I'm Anthony Marques</h2>
+    <header class="bio-card">
+      <h1>I'm Anthony Marques</h1>
       <p>
         I am a self-taught FrontEnd developer. I do love people and helping
         others to make robust web applications.
       </p>
-    </div>
+    </header>
     <div id="tech-stack">
       <section>
         <app-tech-stack></app-tech-stack>

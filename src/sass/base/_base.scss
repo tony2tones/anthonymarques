@@ -1,4 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Fonts
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+
+// Colors
+$primary-color: #f2f5f7;  // Update with your primary color
+$secondary-color: #ced0d7;  // Update with your secondary color
+$accent-color: #e74c3c;  // Update with your accent color
+
 *,
 *::after,
 *::before {
@@ -16,10 +25,20 @@ html {
 body {
     margin:0;
     background-color: #24272e;
+    font-size: clamp(1.125rem,2vw,1.125rem);
 }
 *{
     margin:0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+  }
+
+  p {
+    line-height: 1.5;
+    color:$secondary-color;
+  }
 
 // SCROLLBAR STYLES
 ::-webkit-scrollbar {
@@ -39,3 +58,27 @@ body {
     border: 3px solid var(--custom-white);
 }
 
+li {
+    animation: fade 3s ease linear;
+}
+
+@keyframes faade {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 1;
+    }
+    // 20%{
+    //     opacity: 1;
+    // }
+    // 50%{
+    //     opacity: 1;
+    // }
+    // 100%{
+    //     opacity: 1;
+    // }
+}

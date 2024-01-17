@@ -85,57 +85,10 @@
   }
 }
 
-.main__container__profile__container.profile__shrink {
-  flex-direction: column;
-
-  & .main__container__profile__card {
-    flex-direction: column;
-    margin-top: 10rem;
-
-    &__profile_image {
-      background-color: rgb(105, 210, 223);
-      border-radius: 10rem;
-      position: relative;
-      height: 18rem;
-      width: 20rem;
-      animation-name: profileCardShrink;
-      animation-duration: 3s;
-      animation-iteration-count: 1;
-
-      &>img {
-        animation: profileImgShrink 4s;
-        position: absolute;
-        width: 16rem;
-        padding-left: 2rem;
-      }
-    }
-
-    &__socials {
-      & ul.socials {
-        position: relative;
-        animation: profileSocials 4s forwards;
-        list-style: none;
-
-        & li {
-          flex-direction: column;
-          padding-right: 5rem;
-          padding-top: 2rem;
-          top: 14rem;
-          left: 8rem;
-
-          & i.fa-brands {
-            scale: 3;
-            padding: 1rem;
-            color: rgb(127, 184, 235);
-          }
-        }
-      }
-    }
-  }
-}
 
 
-.content {
+
+.wrapper {
   height: 100vh;
   overflow: auto;
 }
@@ -145,6 +98,7 @@
 }
 
 .bio-card {
+  min-height: 49rem;
   word-wrap: break-word;
   color: aliceblue;
   width: auto;
@@ -152,7 +106,6 @@
   margin-left: 16rem;
   margin-top: 25rem;
   font-size: 3rem;
-  height: inherit;
 }
 
 @media(max-width: 644px) {

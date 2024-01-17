@@ -22,8 +22,6 @@
 .desktop-list {
     margin: 0px;
     margin-top: -18rem;
-    display: grid;
-    height: 100vh;
     place-items: center;
 }
 
@@ -34,11 +32,16 @@
     margin: auto 20%;
 }
 
-.tech-card-group,
+// .tech-card-group,
 .card {
     height: 47vh;
 }
 
+.tech-card-group {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 250px));
+}
 .card {
     background-color: rgba(212, 255, 0, 0.05);
     border-radius: 1vmin;
@@ -48,6 +51,7 @@
 .tech-card {
     width: 30vmin;
     background-color: cornsilk;
+
 }
 
 .tech-card:nth-child(1) {
@@ -56,7 +60,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: translate(111%, 40%) rotate(19deg)
+    // transform: translate(111%, 40%) rotate(19deg)
 }
 
 .tech-card:nth-child(2) {
@@ -65,12 +69,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: translate(60%, -66%) rotate(10deg);
+    // transform: translate(60%, -66%) rotate(10deg);
 }
 
 .tech-card:nth-child(3) {
     background-color: rgb(247, 223, 30);
-    transform: translate(10%, -166%) rotate(0deg);
+    // transform: translate(10%, -166%) rotate(0deg);
     background-image: url('../../assets/images/icons/javascript-yellow-box-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,7 +87,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: translate(-39%, -261%) rotate(-7deg);
+    // transform: translate(-39%, -261%) rotate(-7deg);
 }
 
 .tech-card:nth-child(5) {
@@ -92,30 +96,29 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
-    transform: translate(-84%, -349%) rotate(-16deg);
+    // transform: translate(-84%, -349%) rotate(-16deg);
 }
 
 // ON HOVER TECH CARDS SECTION
 .tech-card-group:hover>.tech-card:nth-child(1) {
-    transform: translate(205%, 34%) rotate(0deg)
+    // transform: translate(205%, 34%) rotate(0deg)
 }
 
 .tech-card-group:hover>.tech-card:nth-child(2) {
-    transform: translate(105%, -66%) rotate(0deg);
+    // transform: translate(105%, -66%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(3) {
-    transform: translate(10%, -166%) rotate(0deg);
+    // transform: translate(10%, -166%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(4) {
     // background-color: rgb(75, 138, 255);
-    transform: translate(-85%, -266%) rotate(0deg);
+    // transform: translate(-85%, -266%) rotate(0deg);
 }
 
 .tech-card-group:hover>.tech-card:nth-child(5) {
-    transform: translate(-180%, -366%) rotate(0deg);
+    // transform: translate(-180%, -366%) rotate(0deg);
 }
 
 

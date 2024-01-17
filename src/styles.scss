@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+// Fonts
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+
+// Colors
+$primary-color: #3498db;  // Update with your primary color
+$secondary-color: #2ecc71;  // Update with your secondary color
+$accent-color: #e74c3c;  // Update with your accent color
+
+// Body
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+}
+
+// Header
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px;
+}
+
+// Navigation
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Main Content
+main {
+  padding: 20px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+  }
+
+  p {
+    line-height: 1.5;
+    color: #333;
+  }
+
+  // Add more styling for your specific components and sections
+}
+
+// Footer
+footer {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+// Links
+a {
+  color: $primary-color;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
